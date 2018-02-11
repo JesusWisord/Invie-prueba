@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/invie.css"/>
   </head>
   <body>
-    <header id="Header">
+    <header id="Header" class:"Header contenedor">
       <!-- Logotipo y menu -->
       <figure class="logotipo"> <!-- Logotipo -->
         <img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/>
@@ -27,11 +27,14 @@
       </nav>
     </header>
     <section id="Portada" class="Portada">  <!-- portada -->
-      <h1 class="titulo">Guitarras Inviesibles</h1>
-      <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
-      <button>Conoce más</button>
+      <!-- No agrega valor semantico // da efectos visuales // sirve como una caja -->
+      <div class="contenedor">
+        <h1 class="titulo">Guitarras Inviesibles</h1>
+        <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
+        <button>Conoce más</button>
+      </div>
     </section>
-    <section id="Guitarras" class="Guitarras"> <!-- guitarra 1 -->
+    <section id="Guitarras" class="Guitarras contenedor"> <!-- guitarra 1 -->
       <h2>Nuestras guitarras</h2>
       <article class="Guitarra">
         <img src="images/invie-acustica.png" alt="Invie Acustic" width="200"/>
