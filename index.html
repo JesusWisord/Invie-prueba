@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="css/invie.css"/>
   </head>
   <body>
-    <header id="header" class="header contenedor">
-      <!-- Logotipo y menu -->
-      <figure class="logotipo"> <!-- Logotipo -->
-        <img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/>
-      </figure>
-      <nav class="menu"> <!-- Menu -->
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="precios.html">Precios</a>
-          </li>
-          <li>
-            <a href="#guitarras">Guitarras</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section id="portada" class="portada">  <!-- portada -->
+
+    <section id="portada" class="portada background">  <!-- portada -->
       <!-- No agrega valor semantico // da efectos visuales // sirve como una caja -->
+      <header id="header" class="header contenedor">
+        <!-- Logotipo y menu -->
+        <figure class="logotipo"> <!-- Logotipo -->
+          <img src="images/invie.png" width="186" height="60" alt="Logotipo Invie"/>
+        </figure>
+        <nav class="menu"> <!-- Menu -->
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+            <li>
+              <a href="#guitarras">Guitarras</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <div class="contenedor">
-        <h1 class="titulo">Guitarras Inviesibles</h1>
+        <h1 class="titulo">Guitarras <span>Invie</span>sibles</h1>
         <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
-        <button class="button">Conoce más</button>
+        <a class="button" href="#guitarras">Conoce más</a>
       </div>
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- guitarra 1 -->
@@ -53,7 +54,7 @@
           </ol>
         </div>
       </article>
-      <article class="guitarra">
+      <article class="guitarra b">
         <img class="left" src="images/invie-classic.png" alt="Invie Classic" width="350"/>
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invie Classic</h3>
@@ -109,8 +110,8 @@
             </div>
           </div>
           <div class="col2">
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+            <label for="comentariosbox">Comentarios</label>
+            <textarea name="comentarios" id="comentariosbox" cols="30" rows="5"></textarea>
             <input type="submit" value="Enviar" class="button"/>
           </div>
         </form>

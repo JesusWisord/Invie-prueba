@@ -3,12 +3,58 @@ body {
   margin: 0;
 }
 
+table{
+  width: 100%;
+}
+
+th{
+  background: #273b47;
+  color: white;
+}
+
+th{
+  padding: 10px 20px;
+  text-align: left;
+
+  }
+
+td{
+  padding: 20px;
+}
+
+table, td, th{
+  border: solid 1px #273b47;
+  border-collapse: collapse;
+}
+
+input, textarea{
+  outline: 0;
+}
+
+input:focus, textarea:focus{
+  background: lightgray;
+}
+
+.contenedor{
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.background{
+  background-image: url('../images/background.png');
+  background-size: cover;
+}
 
 .titulo {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
   margin-bottom: 0;
   margin-top: 70px;
+}
+
+.titulo span{
+  text-decoration: underline;
 }
 
 .title-a{
@@ -23,6 +69,7 @@ body {
 
 .guitarras{
   color: #1F313C;
+  margin-bottom: 60px ;
 }
 
 .guitarras h2{
@@ -31,9 +78,9 @@ body {
 }
 
 .portada {
-  background-image: url('../images/background.png');
   color: white;
   padding: 20px;
+  height: 500px;
 }
 
 .portada button{
@@ -56,21 +103,22 @@ body {
   content: '∘';
   font-size: 50px;
   line-height: 20px;
-  color: blue;
+  color: white;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
 }
 
 .logotipo{
   display: inline-block;
-}
-
-.contenedor{
-  width: 800px;
-  margin: auto;
+  margin-left: 0;
 }
 
 .guitarra{
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
   /*overflow: hidden;*/
   border: 1px solid #1F313C;
   border-radius: 8px;
@@ -85,15 +133,20 @@ body {
 .left{
   float: left;
   position: relative;
-  top: 80px;
 }
 
 .guitarra ol{
   padding: 0px;
 }
 
+.guitarra.b{
+  height: 190px;
+}
+
 .contenedor-guitarra-b{
   margin-left: 350px;
+  position: relative;
+  bottom: 90px;
 }
 
 .contenedor-guitarra-a{
@@ -105,15 +158,20 @@ body {
 }
 
 .button{
-  border-radius: 5px;
+  border-radius: 12px;
   background: #fd324e;
   color: white;
   border: none;
-  padding: 7px;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
 }
 
 .footer{
   background: #273b47;
+  padding: 50px 10px;
 }
 
 .contacto img{
@@ -140,13 +198,13 @@ body {
   width: 300px;
   flex-wrap: wrap;
   align-items: center;
+  height: 200px;
 }
 
 .formulario{
   display: flex;
   width: 400px;
   color: white;
-  padding: 50px 10px;
 }
 
 .col1, .col2{
@@ -162,6 +220,10 @@ body {
   align-items: flex-start;
 }
 
+.col2 .button {
+  margin-top: 15px;
+}
+
 .intereses label{
   font-size: 14px;
 }
@@ -174,26 +236,6 @@ body {
   margin-top: 10px;
 }
 
-table{
-  width: 100%;
-}
-
-th{
-  background: #273b47;
-  color: white;
-}
-
-th{
-  padding: 10px 20px;
-  text-align: left;
-
-  }
-
-td{
-  padding: 20px;
-}
-
-table, td, th{
-  border: solid 1px #273b47;
-  border-collapse: collapse;
+.tabla{
+  margin: 50px 0px;
 }
