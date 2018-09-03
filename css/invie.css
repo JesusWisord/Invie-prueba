@@ -1,3 +1,6 @@
+/* ----------------- Desarrollo Web // Pantalla Gral --------------------- */
+
+
 body {
   font-family: 'Allerta', sans-serif;
   margin: 0;
@@ -36,7 +39,7 @@ input:focus, textarea:focus{
 }
 
 .contenedor{
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   position: relative;
 }
@@ -139,7 +142,7 @@ input:focus, textarea:focus{
   padding: 0px;
 }
 
-.guitarra.b{
+.guitarra-b{
   height: 190px;
 }
 
@@ -238,4 +241,175 @@ input:focus, textarea:focus{
 
 .tabla{
   margin: 50px 0px;
+}
+
+
+/* ---------------------- Responsive Design ------------------------- */
+
+/* ---------------------- Tablet ------------------------- */
+
+@media screen and (max-width: 850px){
+
+  .titulo{
+    font-size: 45px;
+  }
+
+  .title-a{
+    font-size: 19px;
+    padding-top: 10px;
+  }
+
+  .portada .button{
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .portada{
+    height: auto;
+  }
+
+  .guitarras{
+    text-align: center;
+  }
+
+  .right, .left{
+    position: static;
+    float: none;
+  }
+
+  .contenedor-guitarra-a ol, .contenedor-guitarra-b ol{
+    list-style: none;
+  }
+
+  .contenedor-guitarra-a .title-b{
+    padding-top: 0;
+    margin-top: 10px;
+  }
+
+  .guitarra-b{
+    height: auto;
+  }
+
+  .contenedor-guitarra-b{
+    position: static;
+    float: none;
+    text-align: center;
+  }
+
+  .contenedor-guitarra-b, .title-b{
+    margin: 0;
+  }
+
+  .contenedor-guitarra-a{
+    padding-left: 0;
+  }
+
+
+}
+
+@media screen and (max-width: 760px){
+  .footer .contenedor{
+    display: block;
+  }
+
+  .contacto{
+    margin: auto;
+  }
+
+  .formulario{
+    margin: auto;
+    width: 300px;
+    display: block;
+  }
+
+  .col1{
+    margin: 0;
+  }
+
+  .intereses label{
+    display: block;
+    font-size: 16px; 
+  }
+
+  input[type="text"],
+  input[type="email"]{
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  textarea{
+    width: 100%;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"]{
+    zoom: 1.5;
+  }
+
+}
+
+
+/* ---------------------- Mobile ------------------------- */
+
+@media screen and (max-width: 650px){
+
+  .header{
+    text-align: center;
+  }
+
+  .logotipo{
+    margin: 0;
+  }
+
+  .menu{
+    display: block;
+    position: static;
+  }
+
+  .menu ul{
+    padding-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  /* ----- portada ----- */
+  .menu li{
+    display: block;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    margin-left: 0;
+  }
+
+  .menu li:before{
+    display: none;
+  }
+
+  .menu li:first-child{
+    border-top: solid 1px white;
+  }
+
+  .portada{
+    text-align: center;
+  }
+
+  .titulo{
+    font-size: 30px;
+  }
+
+  .title{
+    font-size: 16px;
+  }
+
+  /* ------ guitarras ------ */
+
+  .guitarra img{
+    width: 200px;
+  }
+
+  .title-b{
+    font-size: 30px;
+  }
+
+
 }
